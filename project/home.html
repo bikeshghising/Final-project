@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionary Optics - Premium Eyewear</title>
+    <meta name="description" content="Discover premium eyewear from top brands at Visionary Optics. Shop stylish glasses, sunglasses and more.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html" class="logo">
+                <img src="logo.png" alt="Visionary Optics Logo">
+            </a>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search brands, styles...">
+                <button type="submit" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="aboutus.html">About</a>
+                <a href="contactus.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Discover Your Perfect Pair</h1>
+            <p class="subtitle">Premium eyewear crafted for style and comfort</p>
+        </section>
+
+        <div class="card-grid">
+            <!-- Product cards -->
+            <div class="card">
+                <div class="badge">Bestseller</div>
+                <img src="Glasses1.jpg" alt="Ray-Ban Aviator Sunglasses" loading="lazy">
+                <div class="card-content">
+                    <h3>Ray-Ban Aviator</h3>
+                    <p class="price">$150</p>
+                    <p class="description">Classic aviator style with 100% UV protection</p>
+                    <button class="btn" onclick="handleClick('Ray-Ban')">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Repeat for other products with proper alt text -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Visionary Optics. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Shipping Info</a>
+        </div>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>
