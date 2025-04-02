@@ -6,16 +6,14 @@
     <title>Shop Premium Eyewear | Visionary Optics</title>
     <meta name="description" content="Shop our collection of premium glasses and sunglasses from top brands like Ray-Ban, Oakley, Gucci and more.">
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="shop.css">
+    <link rel="favico " href="images/logo.png">
 </head>
 <body>
     <header>
         <nav>
             <a href="home.html" class="logo">
-                <img src="logo.png" alt="Visionary Optics Logo">
+                <img src="images/logo.png" alt="Visionary Optics Logo">
             </a>
             
             <div class="search-container">
@@ -31,8 +29,16 @@
             <div class="nav-links">
                 <a href="home.html">Home</a>
                 <a href="shop.html" class="active">Shop</a>
-                <a href="aboutus.html">About</a>
-                <a href="contactus.html">Contact</a>
+                <a href="contactus.html">Contact us</a>
+                <a href="aboutus.html">About us</a>
+                <a href="#" id="cart-link" class="cart-link">
+                    <span id="cart-count">0</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                </a>
             </div>
         </nav>
     </header>
@@ -50,144 +56,12 @@
             </div>
         </section>
 
-        <div class="card-grid">
-            <!-- Product 1 -->
-            <div class="card">
-                <div class="badge">Bestseller</div>
-                <img src="Glasses1.jpg" alt="Ray-Ban Aviator Sunglasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Ray-Ban Aviator</h3>
-                    <div class="rating">
-                        ★★★★☆ <span class="review-count">(128)</span>
-                    </div>
-                    <p class="price">$150 <span class="original-price">$180</span></p>
-                    <p class="description">Classic aviator style with 100% UV protection lenses</p>
-                    <button class="btn" onclick="handleClick('Ray-Ban Aviator')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 2 -->
-            <div class="card">
-                <div class="badge new">New</div>
-                <img src="Glasses2.jpg" alt="Oakley Holbrook Sunglasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Oakley Holbrook</h3>
-                    <div class="rating">
-                        ★★★★★ <span class="review-count">(94)</span>
-                    </div>
-                    <p class="price">$120</p>
-                    <p class="description">Durable frame with high-definition optics</p>
-                    <button class="btn" onclick="handleClick('Oakley Holbrook')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 3 -->
-            <div class="card">
-                <img src="Glasses3.jpg" alt="Gucci Round-frame Glasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Gucci Round</h3>
-                    <div class="rating">
-                        ★★★★☆ <span class="review-count">(76)</span>
-                    </div>
-                    <p class="price">$200</p>
-                    <p class="description">Luxury acetate frames with gold accents</p>
-                    <button class="btn" onclick="handleClick('Gucci Round')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 4 -->
-            <div class="card">
-                <img src="Glasses4.jpg" alt="Prada Square-frame Glasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Prada Square</h3>
-                    <div class="rating">
-                        ★★★★☆ <span class="review-count">(62)</span>
-                    </div>
-                    <p class="price">$180</p>
-                    <p class="description">Modern square frames with lightweight design</p>
-                    <button class="btn" onclick="handleClick('Prada Square')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 5 -->
-            <div class="card">
-                <div class="badge">Popular</div>
-                <img src="Glasses5.jpg" alt="Versace Medusa Sunglasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Versace Medusa</h3>
-                    <div class="rating">
-                        ★★★★★ <span class="review-count">(115)</span>
-                    </div>
-                    <p class="price">$220</p>
-                    <p class="description">Signature Medusa logo with polarized lenses</p>
-                    <button class="btn" onclick="handleClick('Versace Medusa')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 6 -->
-            <div class="card">
-                <img src="Glasses6.jpg" alt="Fendi Cat-eye Glasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Fendi Cat-eye</h3>
-                    <div class="rating">
-                        ★★★★☆ <span class="review-count">(53)</span>
-                    </div>
-                    <p class="price">$160</p>
-                    <p class="description">Feminine cat-eye shape with FF logo</p>
-                    <button class="btn" onclick="handleClick('Fendi Cat-eye')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 7 -->
-            <div class="card">
-                <div class="badge">Luxury</div>
-                <img src="Glasses7.jpg" alt="Chanel Round Sunglasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Chanel Round</h3>
-                    <div class="rating">
-                        ★★★★★ <span class="review-count">(87)</span>
-                    </div>
-                    <p class="price">$250</p>
-                    <p class="description">Interlocking CC logo with gradient lenses</p>
-                    <button class="btn" onclick="handleClick('Chanel Round')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 8 -->
-            <div class="card">
-                <img src="Glasses8.jpg" alt="Burberry Check-frame Glasses" loading="lazy">
-                <div class="card-content">
-                    <h3>Burberry Check</h3>
-                    <div class="rating">
-                        ★★★★☆ <span class="review-count">(68)</span>
-                    </div>
-                    <p class="price">$190</p>
-                    <p class="description">Iconic check pattern on temple tips</p>
-                    <button class="btn" onclick="handleClick('Burberry Check')">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- Product 9 -->
-            <div class="card">
-                <div class="badge new">New</div>
-                <img src="Glasses9.jpg" alt="Dolce & Gabbana Oversized Sunglasses" loading="lazy">
-                <div class="card-content">
-                    <h3>D&G Oversized</h3>
-                    <div class="rating">
-                        ★★★★☆ <span class="review-count">(42)</span>
-                    </div>
-                    <p class="price">$210</p>
-                    <p class="description">Bold oversized frames with logo detailing</p>
-                    <button class="btn" onclick="handleClick('D&G Oversized')">Add to Cart</button>
-                </div>
-            </div>
+        <div class="card-grid" id="product-grid">
         </div>
         
         <div class="pagination">
-            <button class="page-btn active">1</button>
-            <button class="page-btn">2</button>
-            <button class="page-btn">3</button>
-            <button class="page-btn next">Next →</button>
+            <button id="prev-page" class="page-btn" disabled>Previous</button>
+            <button id="next-page" class="page-btn">Next</button>
         </div>
     </main>
 
@@ -196,18 +70,18 @@
             <div class="footer-section">
                 <h4>Shop</h4>
                 <ul>
-                    <li><a href="#">All Glasses</a></li>
-                    <li><a href="#">Sunglasses</a></li>
-                    <li><a href="#">Eyeglasses</a></li>
-                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="shop.html">All Glasses</a></li>
+                    <li><a href="shop.html">Sunglasses</a></li>
+                    <li><a href="shop.html">Eyeglasses</a></li>
+                    <li><a href="shop.html">New Arrivals</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
                 <h4>Support</h4>
                 <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="contactus.html">FAQs</a></li>
                     <li><a href="#">Shipping & Returns</a></li>
                     <li><a href="#">Size Guide</a></li>
                 </ul>
@@ -243,6 +117,8 @@
         </div>
     </footer>
 
-    <script src="product.js"></script>
+    <div id="notification" class="notification"></div>
+
+    <script src="shop.js"></script>
 </body>
 </html>

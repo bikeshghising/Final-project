@@ -1,20 +1,9 @@
-
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
     padding: 1rem 0;
     margin: 2rem 0;
-  }
-  
-
-  .card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
   }
   
   .card:hover {
@@ -51,10 +40,9 @@
   }
   
   .badge.new {
-    background: #3b82f6; /* Blue for new items */
+    background: #3b82f6; 
   }
   
-  /* Product Typography */
   .card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
@@ -62,7 +50,7 @@
   }
   
   .rating {
-    color: #f59e0b; /* Gold color for stars */
+    color: #f59e0b; 
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
   }
@@ -96,7 +84,6 @@
     opacity: 0.9;
   }
   
-  /* Filter and Page Header */
   .page-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -132,7 +119,6 @@
     border-color: var(--primary-color);
   }
   
-  /* Pagination */
   .pagination {
     display: flex;
     justify-content: center;
@@ -165,7 +151,6 @@
     border-radius: 50px;
   }
   
-  /* Footer Enhancements */
   .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -250,7 +235,7 @@
     color: white;
   }
   
-  /* Responsive Adjustments */
+  
   @media (max-width: 768px) {
     .card-grid {
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
